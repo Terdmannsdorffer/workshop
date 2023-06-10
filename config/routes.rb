@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   root "static_pages#home"
+
+  resources :tweets, except: [:update, :edit]
 end
